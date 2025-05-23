@@ -10,10 +10,11 @@ sleep 1
 
 # ========== Update & Install Chromium ========== #
 echo "[+] Updating system..."
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 echo "[+] Installing Chromium & dependencies..."
-sudo apt install -y chromium-browser chromium-driver python3-pip
+sudo apt install -y chromium-browser chromium-chromedriver python3-pip
 pip3 install selenium
 
 echo -e "\n✅ \033[1;32mInstallation Complete - Powered by VenomRxz\033[0m"
